@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  bot:
+    build: .
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+  redis:
+    image: redis:latest
+    ports:
+      - "6380:6379"
