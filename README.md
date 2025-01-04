@@ -4,4 +4,4 @@
 склонировать репозиторий
 запустить через docker или docker-compose (docker-compose up --build)
 ## ссылка на тг-бот:
-{https://t.me/photo_enbot}
+https://t.me/photo_enbot
